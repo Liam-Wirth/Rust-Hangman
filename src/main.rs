@@ -1,4 +1,4 @@
-#[allow(non_snake_case)]
+#![allow(non_snake_case)]
 use rand::Rng;
 use std::fs;
 use std::io;
@@ -90,7 +90,7 @@ pub fn check_letter(word: &String, letter: &str) -> (bool, Vec<usize>) {
     }
 }
 pub fn nuke_terminal() {
-    for i in 0..500 {
+    for _i in 0..500 {
         println!();
     }
 }
